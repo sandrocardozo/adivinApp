@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Que numero se mostro?"
+            android:textSize="28dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:id="@+id/tvPregunta"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="digite numero"
+            android:textSize="24dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:inputType="number"
+            android:id="@+id/etNumero"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verificar"
+            android:textSize="24dp"
+            android:layout_marginTop="30dp"
+            android:onClick="verificar"
+            android:id="@+id/btnVerificar"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
